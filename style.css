@@ -55,7 +55,7 @@ input {
 button {
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 11px 42px;
     background: #ff5845d5;
     color: #fff;
     font-size: 16px;
@@ -92,4 +92,21 @@ ul li.checked {
 
 ul li.checked::before {
     background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #403a3a;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: rgb(224, 224, 195);
+    border-radius: 60%;
 }
