@@ -29,6 +29,13 @@ listContainer.addEventListener(
   false
 );
 
+ inputBox.addEventListener("keypress", function(f){
+  if(f.key === "Enter"){
+    f.preventDefault();
+    addTask();
+  }
+ });
+
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
